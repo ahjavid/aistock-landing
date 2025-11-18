@@ -64,7 +64,7 @@ export default function ArchitecturePage() {
                 </div>
                 <div className="card">
                   <div className="font-semibold mb-1">Storage</div>
-                  <div className="text-xs text-brand-text-secondary">Filesystem</div>
+                  <div className="text-xs text-brand-text-secondary">PostgreSQL + Redis</div>
                 </div>
               </div>
             </div>
@@ -196,10 +196,15 @@ Response:
 {
   "action_type": "BUY",
   "position_size": 0.65,
-  "confidence": 0.85,
-  "expected_return": 0.12,
+  "expected_return": 0.082,
+  "volatility": 0.285,
   "risk_level": "moderate",
-  "approved": true
+  "approved": true,
+  "metadata": {
+    "current_price": 45.17,
+    "stop_loss": 41.95,
+    "take_profit": 50.59
+  }
 }`}
             </pre>
           </div>
