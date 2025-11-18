@@ -39,7 +39,7 @@ export default function Architecture() {
                 <div className="text-brand-primary font-bold text-lg">Infrastructure</div>
                 <div className="space-y-2 text-sm">
                   <div className="card">Railway<br/><span className="text-xs text-brand-text-secondary">Deployment</span></div>
-                  <div className="card">Market Data<br/><span className="text-xs text-brand-text-secondary">Yahoo Finance</span></div>
+                  <div className="card">Market Data<br/><span className="text-xs text-brand-text-secondary">Tiingo API</span></div>
                   <div className="card">Storage<br/><span className="text-xs text-brand-text-secondary">Filesystem</span></div>
                 </div>
               </div>

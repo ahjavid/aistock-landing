@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import PerformanceHighlights from "@/components/PerformanceHighlights";
 import Architecture from "@/components/Architecture";
+import APIDemo from "@/components/APIDemo";
 import CTA from "@/components/CTA";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
       <PerformanceHighlights />
       <Architecture />
+      <APIDemo />
       <CTA />
     </>
   );

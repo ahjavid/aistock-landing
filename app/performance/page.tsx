@@ -2,8 +2,8 @@ import { topPerformers, summaryStatistics, backtestInfo } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Performance Metrics | Algorithmic Trading Research',
-  description: 'Comprehensive backtest results for 30 profitable trading symbols using RL algorithms.',
+  title: 'Performance Metrics',
+  description: 'Comprehensive backtest results for top 20 profitable trading symbols using RL algorithms.',
 };
 
 export default function PerformancePage() {

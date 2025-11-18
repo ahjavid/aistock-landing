@@ -58,9 +58,9 @@ export default function ArchitecturePage() {
                   <div className="font-semibold mb-1">Railway</div>
                   <div className="text-xs text-brand-text-secondary">Deployment</div>
                 </div>
-                <div className="card">
+                                <div className="card hover:scale-105 transition-transform">
                   <div className="font-semibold mb-1">Market Data</div>
-                  <div className="text-xs text-brand-text-secondary">Yahoo Finance</div>
+                  <div className="text-xs text-brand-text-secondary">Tiingo API</div>
                 </div>
                 <div className="card">
                   <div className="font-semibold mb-1">Storage</div>
