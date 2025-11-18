@@ -10,26 +10,24 @@ This landing page showcases advanced ML/AI engineering capabilities including:
 - **Reinforcement Learning** (PPO, A2C, SAC algorithms)
 - **Domain-Driven Design** with clean architecture
 - **Walk-Forward Validation** with incremental learning
-- **Production Infrastructure** (FastAPI, PostgreSQL, Redis)
+- **Production Infrastructure** (FastAPI, Railway deployment)
 
-**For educational and portfolio demonstration purposes only.**
+**Educational research demonstration showcasing ML engineering expertise.**
 
 ## ⚠️ Important Legal Disclaimers
 
 - ❌ **NOT FINANCIAL ADVICE**
 - ❌ **NOT FOR REAL TRADING**
 - ✅ Educational research demonstration
-- ✅ Portfolio/skills showcase
 - ⚠️ Past performance does not guarantee future results
 - ⚠️ Author assumes no liability for any use of this information
 
 ## 🏗️ System Architecture
 
-- **Landing Page**: Next.js (Static) → Deployed on Vercel (FREE)
+- **Landing Page**: Next.js (Static) → Deployed on Vercel
 - **Backend API**: FastAPI (Python) → Deployed on Railway
-- **Dashboard**: React (SPA) → Deployed on Vercel
-- **Database**: PostgreSQL on Railway
-- **Cache**: Redis on Railway
+- **Dashboard**: React (SPA) → Separate repository (education branch)
+- **Storage**: PostgreSQL + Redis on Railway
 
 ## 🚀 Quick Start
 
@@ -109,7 +107,7 @@ curl -X POST \
   https://aistock-production-2561.up.railway.app/api/v1/rl/predict
 ```
 
-**Note:** Training and live trading endpoints are disabled for public deployment. See [education branch](https://github.com/ahjavid/Aistock/tree/education) for full local system.
+**Note:** Training and live trading endpoints are disabled for public deployment. See [Aistock education branch](https://github.com/ahjavid/Aistock/tree/education) for full local system.
 
 ## 📊 Performance Data
 
@@ -124,7 +122,7 @@ Top performers data sourced from `excellent_performers_stats.json`:
 
 - **Framework**: Next.js 15 (App Router)
 - **Styling**: Tailwind CSS
-- **Deployment**: Vercel (FREE tier)
+- **Deployment**: Vercel
 - **Analytics**: None (privacy-first)
 
 ## 📝 Environment Variables
@@ -198,10 +196,9 @@ landing-page/
 
 ## 🔗 Links
 
-- **Landing Page**: (To be deployed)
-- **Dashboard**: https://github.com/ahjavid/live-trader-ai (education branch)
+- **Landing Page**: https://aistock-landing.vercel.app (to be deployed)
+- **Backend Repository**: https://github.com/ahjavid/Aistock/tree/education
 - **Backend API**: https://aistock-production-2561.up.railway.app
-- **Railway**: https://railway.app
 
 ## 📄 License
 
