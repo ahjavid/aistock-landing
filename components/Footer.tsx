@@ -42,9 +42,13 @@ export default function Footer() {
           {/* Legal */}
           <div>
             <h3 className="text-lg font-semibold text-brand-text mb-4">Important Notice</h3>
-            <p className="text-brand-text-secondary text-sm">
+            <p className="text-brand-text-secondary text-sm mb-3">
               This system is for <strong>educational and research purposes only</strong>.
-              Not financial advice. Past performance does not guarantee future results.
+              Not financial advice. Not for real trading.
+            </p>
+            <p className="text-brand-text-secondary text-xs">
+              Always conduct thorough research and consult financial professionals before making investment decisions.
+              Trading involves substantial risk of loss. Past performance does not guarantee future results.
             </p>
             <div className="mt-4 text-xs text-brand-text-secondary">
               <p>© 2025 Algorithmic Trading Research</p>

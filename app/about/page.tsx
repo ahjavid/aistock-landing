@@ -98,7 +98,7 @@ export default function AboutPage() {
             discussions about reinforcement learning, trading systems, and software architecture.
           </p>
           <a 
-            href="https://github.com/ahjavid/live-trader-ai"
+            href="https://github.com/ahjavid/Aistock/tree/education"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center"

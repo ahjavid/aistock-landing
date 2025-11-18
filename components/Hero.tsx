@@ -59,15 +59,6 @@ export default function Hero() {
             View Source Code
           </a>
         </div>
-
-        {/* Disclaimer */}
-        <div className="mt-12 p-6 card max-w-4xl mx-auto border-l-4 border-brand-danger">
-          <p className="text-sm text-brand-text-secondary">
-            <strong className="text-brand-danger">Important:</strong> This system demonstrates educational RL algorithms.
-            <strong> Not financial advice. Not for real trading.</strong> For portfolio and research purposes only.
-            Past performance does not guarantee future results.
-          </p>
-        </div>
       </div>
     </section>
   );

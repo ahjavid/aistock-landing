@@ -30,15 +30,6 @@ export default function CTA() {
             API Documentation
           </a>
         </div>
-
-        {/* Educational Notice */}
-        <div className="mt-8 pt-8 border-t border-brand-primary/30">
-          <p className="text-sm text-brand-text-secondary max-w-2xl mx-auto">
-            <strong className="text-brand-warning">Educational Research Project:</strong> This system demonstrates
-            advanced RL algorithms and software engineering practices. Not intended for real trading or financial advice.
-            Always conduct thorough research and consult financial professionals before making investment decisions.
-          </p>
-        </div>
       </div>
     </section>
   );

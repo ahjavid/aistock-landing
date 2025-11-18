@@ -192,13 +192,6 @@ export default function APIDemo() {
                   </div>
                 </div>
               )}
-
-              {/* Disclaimer */}
-              <div className="mt-4 p-3 bg-brand-warning/10 border border-brand-warning/30 rounded-lg">
-                <p className="text-xs text-brand-text-secondary">
-                  {result.metadata?.disclaimer || 'Educational research only. Not financial advice.'}
-                </p>
-              </div>
             </div>
           )}
 
