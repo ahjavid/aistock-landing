@@ -77,7 +77,7 @@ export default function PerformanceHighlights() {
 
         <div className="mt-6 text-center">
           <Link href="/performance" className="btn-primary">
-            View All 30 Performers
+            View All 20 Performers
           </Link>
         </div>
       </div>

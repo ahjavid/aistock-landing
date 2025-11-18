@@ -34,7 +34,7 @@ export default function Hero() {
             <div className="text-sm text-brand-text-secondary">Average Win Rate</div>
           </div>
           <div className="card text-center">
-            <div className="text-3xl font-bold text-brand-text mb-2">30</div>
+            <div className="text-3xl font-bold text-brand-text mb-2">20</div>
             <div className="text-sm text-brand-text-secondary">Profitable Symbols</div>
           </div>
         </div>
