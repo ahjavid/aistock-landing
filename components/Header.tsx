@@ -35,7 +35,7 @@ export default function Header() {
               About
             </Link>
             <a 
-              href="https://github.com/ahjavid/live-trader-ai"
+              href="https://github.com/ahjavid/Aistock/tree/education"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
@@ -75,7 +75,7 @@ export default function Header() {
               About
             </Link>
             <a 
-              href="https://github.com/ahjavid/live-trader-ai"
+              href="https://github.com/ahjavid/Aistock/tree/education"
               target="_blank"
               rel="noopener noreferrer"
               className="block btn-primary text-center"
