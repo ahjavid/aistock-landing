@@ -109,17 +109,6 @@ export default function AboutPage() {
             View on GitHub
           </a>
         </div>
-
-        {/* Final Notice */}
-        <div className="p-6 card border-l-4 border-brand-danger">
-          <h3 className="text-lg font-bold text-brand-danger mb-2">Educational Use Only</h3>
-          <p className="text-sm text-brand-text-secondary">
-            This system is a research and educational demonstration. It is <strong>not financial advice</strong> and
-            should <strong>not be used for real trading</strong>. Always consult with qualified financial professionals
-            before making investment decisions. Trading involves substantial risk of loss and is not suitable for all
-            investors. Past performance does not guarantee future results.
-          </p>
-        </div>
       </div>
     </div>
   );
