@@ -187,7 +187,7 @@ export default function ArchitecturePage() {
           <div className="bg-brand-bg p-6 rounded-lg border border-brand-primary/30 overflow-x-auto">
             <pre className="text-sm text-brand-text-secondary">
 {`curl -X POST \\
-  -H "X-API-Key: aistock_test_key_2_standard_ml_backtest_2024" \\
+  -H "X-API-Key: YOUR_API_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{"symbol": "NEM"}' \\
   https://aistock-production-2561.up.railway.app/api/v1/rl/predict

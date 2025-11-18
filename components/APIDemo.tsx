@@ -18,7 +18,11 @@ export default function APIDemo() {
 
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://aistock-production-2561.up.railway.app';
-      const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'aistock_test_key_2_standard_ml_backtest_2024';
+      const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+      
+      if (!apiKey) {
+        throw new Error('API key not configured');
+      }
       
       const response = await fetch(`${apiUrl}/api/v1/rl/predict`, {
         method: 'POST',

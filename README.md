@@ -99,9 +99,9 @@ npm run dev
 # Health Check
 curl https://aistock-production-2561.up.railway.app/api/v1/rl/health
 
-# Single Prediction (cached, rate-limited)
+# Single Prediction (requires valid API key)
 curl -X POST \
-  -H "X-API-Key: aistock_test_key_2_standard_ml_backtest_2024" \
+  -H "X-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"symbol": "AAPL"}' \
   https://aistock-production-2561.up.railway.app/api/v1/rl/predict
@@ -132,7 +132,7 @@ Create `.env.local`:
 ```env
 # Railway Backend
 NEXT_PUBLIC_API_URL=https://aistock-production-2561.up.railway.app
-NEXT_PUBLIC_API_KEY=aistock_test_key_2_standard_ml_backtest_2024
+NEXT_PUBLIC_API_KEY=your_api_key_here
 
 # Site Configuration
 NEXT_PUBLIC_SITE_NAME=Algorithmic Trading Research
