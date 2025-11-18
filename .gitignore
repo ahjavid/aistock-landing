@@ -32,3 +32,10 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Developer documentation (internal use only)
+SETUP_GUIDE.md
+VERCEL_DEPLOYMENT.md
+DEPLOY.md
+PROJECT_SUMMARY.md
+NEXT_STEPS.md
