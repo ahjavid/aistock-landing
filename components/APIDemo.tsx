@@ -130,9 +130,11 @@ export default function APIDemo() {
               {/* Metrics Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-3 bg-brand-bg rounded-lg">
-                  <div className="text-xs text-brand-text-secondary mb-1">Confidence</div>
+                  <div className="text-xs text-brand-text-secondary mb-1">Expected Return</div>
                   <div className="text-lg font-semibold text-brand-text">
-                    {(result.confidence * 100).toFixed(1)}%
+                    {result.expected_return !== null && result.expected_return !== undefined 
+                      ? `${(result.expected_return * 100).toFixed(1)}%`
+                      : 'N/A'}
                   </div>
                 </div>
                 <div className="p-3 bg-brand-bg rounded-lg">
