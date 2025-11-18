@@ -19,8 +19,8 @@ export default function Hero() {
         </h1>
 
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-brand-text-secondary max-w-3xl mx-auto mb-8">
-          Built with Domain-Driven Design | PPO, A2C, SAC Algorithms | Systematic Risk Management
+        <p className="text-lg md:text-2xl text-brand-text-secondary max-w-4xl mx-auto mb-8">
+          <span className="whitespace-nowrap">Built with Domain-Driven Design</span> | <span className="whitespace-nowrap">PPO, A2C, SAC Algorithms</span> | <span className="whitespace-nowrap">Systematic Risk Management</span>
         </p>
 
         {/* Stats */}
