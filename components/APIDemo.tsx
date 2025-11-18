@@ -3,12 +3,13 @@
 import { useState } from 'react';
 
 export default function APIDemo() {
-  const [symbol, setSymbol] = useState('AAPL');
+  const [symbol, setSymbol] = useState('NEM');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const popularSymbols = ['AAPL', 'MSFT', 'NVDA', 'GOOGL', 'TSLA', 'NEM', 'META', 'AMD'];
+  // Top 20 performers from backtest data - only these symbols are trained
+  const popularSymbols = ['NEM', 'ORCL', 'AVGO', 'ACN', 'ADBE', 'NVDA', 'CAT', 'GOOGL'];
 
   const handlePredict = async () => {
     setLoading(true);
@@ -107,7 +108,7 @@ export default function APIDemo() {
               {/* Action Header */}
               <div className={`p-4 rounded-lg ${
                 result.action_type === 'BUY' ? 'bg-green-500/10 border border-green-500/30' :
-                result.action_type === 'SELL' ? 'bg-red-500/10 border border-red-500/30' :
+                result.action_type === 'SELL' || result.action_type === 'SHORT' ? 'bg-red-500/10 border border-red-500/30' :
                 'bg-yellow-500/10 border border-yellow-500/30'
               }`}>
                 <div className="flex items-center justify-between">
@@ -119,7 +120,9 @@ export default function APIDemo() {
                   </div>
                   <div className="text-right">
                     <div className="text-sm text-brand-text-secondary">Position Size</div>
-                    <div className="text-xl font-semibold text-brand-text">{result.position_size}%</div>
+                    <div className="text-xl font-semibold text-brand-text">
+                      {Math.abs(result.position_size * 100).toFixed(1)}%
+                    </div>
                   </div>
                 </div>
               </div>
@@ -141,16 +144,49 @@ export default function APIDemo() {
                 <div className="p-3 bg-brand-bg rounded-lg">
                   <div className="text-xs text-brand-text-secondary mb-1">Volatility</div>
                   <div className="text-lg font-semibold text-brand-text">
-                    {(result.volatility * 100).toFixed(1)}%
+                    {(result.metadata?.volatility * 100 || 0).toFixed(1)}%
                   </div>
                 </div>
                 <div className="p-3 bg-brand-bg rounded-lg">
-                  <div className="text-xs text-brand-text-secondary mb-1">Price</div>
+                  <div className="text-xs text-brand-text-secondary mb-1">Current Price</div>
                   <div className="text-lg font-semibold text-brand-text">
                     ${result.metadata?.current_price?.toFixed(2) || 'N/A'}
                   </div>
                 </div>
               </div>
+
+              {/* Additional Info */}
+              {result.metadata?.stop_loss && (
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="p-3 bg-brand-bg rounded-lg">
+                    <div className="text-xs text-brand-text-secondary mb-1">Stop Loss</div>
+                    <div className="text-lg font-semibold text-red-400">
+                      ${result.metadata.stop_loss.toFixed(2)}
+                    </div>
+                  </div>
+                  <div className="p-3 bg-brand-bg rounded-lg">
+                    <div className="text-xs text-brand-text-secondary mb-1">Take Profit</div>
+                    <div className="text-lg font-semibold text-green-400">
+                      ${result.metadata.take_profit?.toFixed(2) || 'N/A'}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Regime & Market Condition */}
+              {result.metadata?.regime && (
+                <div className="p-3 bg-brand-bg rounded-lg">
+                  <div className="text-xs text-brand-text-secondary mb-2">Market Analysis</div>
+                  <div className="flex gap-4 text-sm">
+                    <span className="text-brand-text">
+                      Regime: <span className="font-semibold capitalize">{result.metadata.regime}</span>
+                    </span>
+                    <span className="text-brand-text">
+                      Condition: <span className="font-semibold capitalize">{result.metadata.market_condition?.replace('_', ' ')}</span>
+                    </span>
+                  </div>
+                </div>
+              )}
 
               {/* Disclaimer */}
               <div className="mt-4 p-3 bg-brand-warning/10 border border-brand-warning/30 rounded-lg">
