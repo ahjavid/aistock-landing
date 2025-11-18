@@ -69,7 +69,7 @@ export default function PerformancePage() {
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-brand-text mb-2">Top 20 Performers</h2>
           <p className="text-sm text-brand-text-secondary">
-            Sorted by return percentage • All 30 symbols were profitable
+            Sorted by return percentage • All 20 symbols were profitable
           </p>
         </div>
 
