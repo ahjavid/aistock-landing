@@ -4,7 +4,7 @@ export default function Disclaimer() {
       <div className="container-custom">
         <div className="py-3 text-center">
           <p className="text-sm text-brand-warning font-semibold">
-            ⚠️ Educational Research Only • Not Financial Advice • Not For Real Trading • For Portfolio/Research Purposes Only
+            ⚠️ Educational Research Demonstration • Not Financial Advice • Not For Real Trading
           </p>
         </div>
       </div>

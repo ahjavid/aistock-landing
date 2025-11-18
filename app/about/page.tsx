@@ -29,10 +29,9 @@ export default function AboutPage() {
             learning algorithms in a financial context.
           </p>
           <p className="text-brand-text-secondary">
-            <strong className="text-brand-warning">Important:</strong> This is purely an educational and
-            research platform. We are <strong>not providing financial advice</strong> and this system is
-            <strong> not intended for real trading</strong>. All data and results are for portfolio
-            demonstration and academic study purposes only.
+            <strong className="text-brand-warning">Important:</strong> This is an educational research demonstration.
+            <strong>Not financial advice</strong> and <strong>not intended for real trading</strong>.
+            Built to showcase advanced ML engineering and system design capabilities.
           </p>
         </div>
 
