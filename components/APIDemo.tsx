@@ -137,23 +137,25 @@ export default function APIDemo() {
               {/* Metrics Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-3 bg-brand-bg rounded-lg">
-                  <div className="text-xs text-brand-text-secondary mb-1">Expected Return</div>
+                  <div className="text-xs text-brand-text-secondary mb-1">Trend Momentum</div>
                   <div className="text-lg font-semibold text-brand-text">
-                    {result.expected_return !== null && result.expected_return !== undefined 
-                      ? `${(result.expected_return * 100).toFixed(1)}%`
+                    {result.trend_momentum !== null && result.trend_momentum !== undefined 
+                      ? `${(result.trend_momentum * 100).toFixed(1)}%`
                       : 'N/A'}
                   </div>
                 </div>
                 <div className="p-3 bg-brand-bg rounded-lg">
-                  <div className="text-xs text-brand-text-secondary mb-1">Risk Level</div>
-                  <div className="text-lg font-semibold text-brand-text capitalize">
-                    {result.metadata?.risk_level ? result.metadata.risk_level.replace(/_/g, ' ') : 'N/A'}
+                  <div className="text-xs text-brand-text-secondary mb-1">Confidence</div>
+                  <div className="text-lg font-semibold text-brand-text">
+                    {result.confidence !== null && result.confidence !== undefined 
+                      ? `${(result.confidence * 100).toFixed(1)}%`
+                      : 'N/A'}
                   </div>
                 </div>
                 <div className="p-3 bg-brand-bg rounded-lg">
                   <div className="text-xs text-brand-text-secondary mb-1">Volatility</div>
                   <div className="text-lg font-semibold text-brand-text">
-                    {(result.metadata?.volatility * 100 || 0).toFixed(1)}%
+                    {(result.volatility * 100 || 0).toFixed(1)}%
                   </div>
                 </div>
                 <div className="p-3 bg-brand-bg rounded-lg">
@@ -164,7 +166,23 @@ export default function APIDemo() {
                 </div>
               </div>
 
-              {/* Additional Info */}
+              {/* Risk & Turbulence */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="p-3 bg-brand-bg rounded-lg">
+                  <div className="text-xs text-brand-text-secondary mb-1">Risk Level</div>
+                  <div className="text-lg font-semibold text-brand-text capitalize">
+                    {result.metadata?.risk_level ? result.metadata.risk_level.replace(/_/g, ' ') : 'N/A'}
+                  </div>
+                </div>
+                <div className="p-3 bg-brand-bg rounded-lg">
+                  <div className="text-xs text-brand-text-secondary mb-1">Turbulence</div>
+                  <div className="text-lg font-semibold text-brand-text capitalize">
+                    {result.turbulence_level || 'N/A'}
+                  </div>
+                </div>
+              </div>
+
+              {/* Stop Loss & Take Profit */}
               {result.metadata?.stop_loss && (
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-3 bg-brand-bg rounded-lg">
