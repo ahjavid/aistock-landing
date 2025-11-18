@@ -42,18 +42,15 @@ export default function AboutPage() {
           <div className="space-y-4 text-brand-text-secondary">
             <div>
               <h3 className="font-semibold text-brand-text mb-2">🤖 Advanced RL Algorithms</h3>
-              <p>Implementation of PPO, A2C, and SAC algorithms with multiple policy network architectures
-              including Transformers, CNN-LSTM, and MLP networks.</p>
+              <p>Three distinct algorithms (PPO, A2C, SAC) each paired with specialized neural architectures—Transformers for sequence modeling, CNN-LSTM for pattern recognition, and MLPs for rapid inference.</p>
             </div>
             <div>
               <h3 className="font-semibold text-brand-text mb-2">🏗️ Domain-Driven Design</h3>
-              <p>Clean architecture following DDD principles with bounded contexts, aggregates, domain events,
-              and separation of concerns for maintainability and scalability.</p>
+              <p>Professional software architecture with isolated trading, risk, and market contexts. Each bounded context maintains its own models, ensuring scalability and reducing coupling between components.</p>
             </div>
             <div>
               <h3 className="font-semibold text-brand-text mb-2">⚡ Production Infrastructure</h3>
-              <p>FastAPI backend deployed on Railway, React dashboard with real-time updates, and Next.js
-              landing page on Vercel. All following modern DevOps best practices.</p>
+              <p>Distributed system deployed across Railway (backend API), Vercel (landing page), with separate React dashboard. Demonstrates modern cloud-native architecture and DevOps workflows.</p>
             </div>
             <div>
               <h3 className="font-semibold text-brand-text mb-2">📊 Rigorous Backtesting</h3>

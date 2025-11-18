@@ -7,7 +7,7 @@ export default function Features() {
         </svg>
       ),
       title: 'Advanced RL Algorithms',
-      description: 'PPO, A2C, and SAC implementations with Transformer, CNN-LSTM, and MLP policy networks.'
+      description: 'State-of-the-art reinforcement learning with multiple policy architectures and algorithms.'
     },
     {
       icon: (
@@ -16,7 +16,7 @@ export default function Features() {
         </svg>
       ),
       title: 'Systematic Risk Management',
-      description: 'Dynamic tiered stop-loss (7-11%), Kelly criterion position sizing, and 22-day time limits.'
+      description: 'Intelligent position sizing, dynamic stop-loss levels, and time-based exit strategies.'
     },
     {
       icon: (
@@ -25,7 +25,7 @@ export default function Features() {
         </svg>
       ),
       title: 'Domain-Driven Design',
-      description: 'Clean architecture with bounded contexts, aggregates, and domain events for maintainability.'
+      description: 'Modular architecture with clear separation of concerns and maintainable code structure.'
     },
     {
       icon: (
@@ -43,7 +43,7 @@ export default function Features() {
         </svg>
       ),
       title: 'Production-Ready',
-      description: 'Deployed on Railway with FastAPI backend. React dashboard for monitoring and control.'
+      description: 'Cloud-deployed infrastructure with modern API and real-time monitoring capabilities.'
     },
     {
       icon: (

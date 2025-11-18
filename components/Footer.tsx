@@ -7,8 +7,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-brand-text mb-4">About This Project</h3>
             <p className="text-brand-text-secondary text-sm">
-              Educational demonstration of production-ready Reinforcement Learning trading algorithms.
-              Built with Domain-Driven Design principles.
+              Educational RL trading system demonstrating production-grade software engineering and ML practices.
             </p>
           </div>
 
