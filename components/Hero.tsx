@@ -48,7 +48,7 @@ export default function Hero() {
             Explore Architecture
           </Link>
           <a 
-            href="https://github.com/ahjavid/live-trader-ai"
+            href="https://github.com/ahjavid/Aistock/tree/education"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-brand-text-secondary hover:text-brand-text transition-colors"

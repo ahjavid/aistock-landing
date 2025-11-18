@@ -1,80 +1,115 @@
-# Algorithmic Trading Research - Landing Page
+# AIStock: Reinforcement Learning Trading Research
 
-Educational demonstration of Reinforcement Learning trading algorithms.
+> **⚠️ EDUCATIONAL RESEARCH PROJECT - NOT FINANCIAL ADVICE**
+
+Professional demonstration of production-level machine learning engineering applied to algorithmic trading research.
 
 ## 🎯 Purpose
 
-This landing page showcases a production-ready RL trading system for **educational and research purposes only**.
+This landing page showcases advanced ML/AI engineering capabilities including:
+- **Reinforcement Learning** (PPO, A2C, SAC algorithms)
+- **Domain-Driven Design** with clean architecture
+- **Walk-Forward Validation** with incremental learning
+- **Production Infrastructure** (FastAPI, PostgreSQL, Redis)
 
-## ⚠️ Important Disclaimers
+**For educational and portfolio demonstration purposes only.**
 
-- **NOT FINANCIAL ADVICE**
-- **NOT FOR REAL TRADING**
-- For portfolio/research demonstration only
-- Past performance does not guarantee future results
+## ⚠️ Important Legal Disclaimers
 
-## 🏗️ Architecture
+- ❌ **NOT FINANCIAL ADVICE**
+- ❌ **NOT FOR REAL TRADING**
+- ✅ Educational research demonstration
+- ✅ Portfolio/skills showcase
+- ⚠️ Past performance does not guarantee future results
+- ⚠️ Author assumes no liability for any use of this information
 
-- **Landing Page**: Next.js on Vercel (FREE)
-- **Backend API**: AIStock on Railway
-- **Frontend Dashboard**: React on current repository (education branch)
+## 🏗️ System Architecture
 
-## 🚀 Quick Deploy to Vercel
+- **Landing Page**: Next.js (Static) → Deployed on Vercel (FREE)
+- **Backend API**: FastAPI (Python) → Deployed on Railway
+- **Dashboard**: React (SPA) → Deployed on Vercel
+- **Database**: PostgreSQL on Railway
+- **Cache**: Redis on Railway
 
-### Option 1: New Repository (Recommended)
+## 🚀 Quick Start
+
+### Local Development
 
 ```bash
-# 1. Create new repo on GitHub: aistock-landing
-# 2. Clone and setup
+# 1. Clone repository
 git clone https://github.com/ahjavid/aistock-landing.git
 cd aistock-landing
 
-# 3. Copy landing-page contents
-cp -r /path/to/live-trader-ai/landing-page/* .
-
-# 4. Install dependencies
+# 2. Install dependencies (requires Node.js)
 npm install
 
-# 5. Deploy to Vercel
-npm run build
-vercel deploy
+# 3. Configure environment
+cp .env.local.example .env.local
+# Edit .env.local with your API settings
+
+# 4. Start development server
+npm run dev
+
+# 5. Visit http://localhost:3000
 ```
 
-### Option 2: Deploy from Current Repo (Alternative)
+### Deploy to Vercel (Production)
 
-```bash
-# Deploy landing-page subfolder directly
-cd landing-page
-vercel deploy
-```
+1. **Push to GitHub**
+   ```bash
+   git push origin main
+   ```
+
+2. **Deploy via Vercel**
+   - Go to https://vercel.com
+   - Import repository: `aistock-landing`
+   - Add environment variables (see .env.local.example)
+   - Click "Deploy"
+
+3. **Your Live URL**: `https://aistock-landing.vercel.app`
 
 ## 📦 What's Included
 
 ### Pages
-- `/` - Hero section with system overview
-- `/performance` - Top 20 symbol backtest results
-- `/architecture` - System design & DDD approach
-- `/about` - Educational mission statement
+- **`/`** - Hero landing with mission statement
+- **`/performance`** - Top 20 backtest results (2025 data)
+- **`/architecture`** - System design, DDD, and infrastructure
+- **`/about`** - Educational disclaimer and project purpose
 
-### Features
-- ✅ Performance metrics display (read-only)
-- ✅ Backtest results visualization
-- ✅ No "trade now" buttons
-- ✅ No account/wallet integration
-- ✅ Clear educational disclaimers
+### Components
+- **Header** - Navigation with educational branding
+- **Hero** - Introduction with disclaimers
+- **Performance** - Static backtest data (no live trading)
+- **Architecture** - Tech stack visualization
+- **Features** - System capabilities showcase
+- **Footer** - Links to documentation and GitHub
 
-## 🔗 API Integration
+### What's NOT Included (By Design)
+- ❌ No "Trade Now" or "Sign Up" buttons
+- ❌ No account creation or authentication
+- ❌ No wallet/payment integration
+- ❌ No live trading execution
+- ✅ **Pure educational demonstration**
 
-Backend URL: `https://aistock-production-2561.up.railway.app`
+## 🔗 API Connection
 
-Example prediction endpoint:
+**Backend:** `https://aistock-production-2561.up.railway.app`
+
+### Safe Public Endpoints
+
 ```bash
+# Health Check
+curl https://aistock-production-2561.up.railway.app/api/v1/rl/health
+
+# Single Prediction (cached, rate-limited)
 curl -X POST \
   -H "X-API-Key: aistock_test_key_2_standard_ml_backtest_2024" \
   -H "Content-Type: application/json" \
-  -d '{"symbol": "NEM"}' \
+  -d '{"symbol": "AAPL"}' \
   https://aistock-production-2561.up.railway.app/api/v1/rl/predict
 ```
+
+**Note:** Training and live trading endpoints are disabled for public deployment. See [education branch](https://github.com/ahjavid/Aistock/tree/education) for full local system.
 
 ## 📊 Performance Data
 

@@ -11,7 +11,7 @@ export default function CTA() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <a 
-            href="https://github.com/ahjavid/live-trader-ai"
+            href="https://github.com/ahjavid/Aistock/tree/education"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -22,12 +22,12 @@ export default function CTA() {
             Explore Source Code
           </a>
           <a 
-            href="https://aistock-production-2561.up.railway.app"
+            href="https://aistock-production-2561.up.railway.app/docs"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
           >
-            View Live API
+            API Documentation
           </a>
         </div>
 

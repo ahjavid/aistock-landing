@@ -17,8 +17,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-brand-text mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://github.com/ahjavid/live-trader-ai" target="_blank" rel="noopener noreferrer" className="text-brand-text-secondary hover:text-brand-primary transition-colors">
-                  GitHub Repository
+                <a href="https://github.com/ahjavid/Aistock/tree/education" target="_blank" rel="noopener noreferrer" className="text-brand-text-secondary hover:text-brand-primary transition-colors">
+                  GitHub Repository (Education Branch)
                 </a>
               </li>
               <li>
