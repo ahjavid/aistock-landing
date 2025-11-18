@@ -17,11 +17,14 @@ export default function APIDemo() {
     setResult(null);
 
     try {
-      const response = await fetch('https://aistock-production-2561.up.railway.app/api/v1/rl/predict', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://aistock-production-2561.up.railway.app';
+      const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'aistock_test_key_2_standard_ml_backtest_2024';
+      
+      const response = await fetch(`${apiUrl}/api/v1/rl/predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-API-Key': 'aistock_test_key_2_standard_ml_backtest_2024'
+          'X-API-Key': apiKey
         },
         body: JSON.stringify({ symbol: symbol.toUpperCase() })
       });

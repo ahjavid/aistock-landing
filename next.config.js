@@ -1,14 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
   reactStrictMode: true,
   poweredByHeader: false,
-  
-  // Environment variables available to the browser
-  env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    NEXT_PUBLIC_SITE_NAME: 'Algorithmic Trading Research',
-  },
 
   // Security headers
   async headers() {
