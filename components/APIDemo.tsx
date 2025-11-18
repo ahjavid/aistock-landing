@@ -143,7 +143,7 @@ export default function APIDemo() {
                 <div className="p-3 bg-brand-bg rounded-lg">
                   <div className="text-xs text-brand-text-secondary mb-1">Risk Level</div>
                   <div className="text-lg font-semibold text-brand-text capitalize">
-                    {result.metadata?.risk_level || 'N/A'}
+                    {result.metadata?.risk_level ? result.metadata.risk_level.replace(/_/g, ' ') : 'N/A'}
                   </div>
                 </div>
                 <div className="p-3 bg-brand-bg rounded-lg">
