@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@ahjavid",
+    creator: "@amir_h_javid",
   },
   robots: {
     index: true,
